@@ -74,7 +74,7 @@ const Contact = () => {
                   <input 
                     type="text" 
                     name="name" 
-                    placeholder="e.g., Nguyen Van A" 
+                    placeholder="e.g.Nguyen Van A" 
                     value={formData.name}
                     onChange={handleChange}
                     disabled={isSubmitting}
@@ -86,7 +86,7 @@ const Contact = () => {
                   <input 
                     type="email" 
                     name="email" 
-                    placeholder="e.g., nguyenvana@gmail.com" 
+                    placeholder="e.g.nguyenvana@gmail.com" 
                     value={formData.email}
                     onChange={handleChange}
                     disabled={isSubmitting}
@@ -99,7 +99,7 @@ const Contact = () => {
                 <input 
                   type="text" 
                   name="subject" 
-                  placeholder="e.g., Hiring for Front-End Position" 
+                  placeholder="e.g.Hiring for Front-End Position" 
                   value={formData.subject}
                   onChange={handleChange}
                   disabled={isSubmitting}
@@ -110,7 +110,7 @@ const Contact = () => {
                 <label>Message</label>
                 <textarea 
                   name="message" 
-                  placeholder="e.g., Hello Trieu, I would like to discuss..." 
+                  placeholder="e.g.Hello Trieu, I would like to discuss..." 
                   rows="3"
                   value={formData.message}
                   onChange={handleChange}
