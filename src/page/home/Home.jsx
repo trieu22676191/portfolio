@@ -1,6 +1,8 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Home.css';
 import avt from '../../assets/home/avt.jpg';
+import cvFile from '../../assets/home/IT_INTERN_NGUYEN_PHU_TRIEU_CV.pdf';
 import { FaGithub, FaLinkedin, FaFacebook, FaInstagram } from 'react-icons/fa';
 
 const Home = () => {
@@ -16,9 +18,9 @@ const Home = () => {
           </p>
           
           <div className="home-buttons">
-            <a href="#project" className="btn btn-primary">View Projects</a>
-            <a href="#contact" className="btn btn-outline">Contact Me</a>
-            <a href="../src/assets/home/IT_INTERN_NGUYEN_PHU_TRIEU_CV.pdf" className="btn btn-outline" download>Download CV</a>
+            <Link to="/project" className="btn btn-primary">View Projects</Link>
+            <Link to="/contact" className="btn btn-outline">Contact Me</Link>
+            <a href={cvFile} className="btn btn-outline" download="IT_INTERN_NGUYEN_PHU_TRIEU_CV.pdf">Download CV</a>
           </div>
 
           <div className="social-links">
