@@ -3,7 +3,8 @@ import { Link } from 'react-router-dom';
 import './Home.css';
 import avt from '../../assets/home/avt.jpg';
 import cvFile from '../../assets/home/IT_INTERN_NGUYEN_PHU_TRIEU_CV.pdf';
-import { FaGithub, FaLinkedin, FaFacebook, FaInstagram } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaFacebook, FaInstagram, FaReact, FaJava, FaHtml5, FaCss3Alt } from 'react-icons/fa';
+import { SiTypescript, SiSpringboot, SiJavascript } from 'react-icons/si';
 
 const Home = () => {
   return (
@@ -18,7 +19,7 @@ const Home = () => {
           </p>
           
           <div className="home-buttons">
-            <Link to="/project" className="btn btn-primary">View Projects</Link>
+            <Link to="/project" className="btn btn-outline">View Projects</Link>
             <Link to="/contact" className="btn btn-outline">Contact Me</Link>
             <a href={cvFile} className="btn btn-outline" download="IT_INTERN_NGUYEN_PHU_TRIEU_CV.pdf">Download CV</a>
           </div>
@@ -34,6 +35,16 @@ const Home = () => {
         <div className="home-image">
           <div className="img-box">
             <img src={avt} alt="Nguyễn Phú Triệu" />
+            
+            <div className="floating-icons">
+              <div className="icon-wrapper react"><FaReact title="React" /></div>
+              <div className="icon-wrapper ts"><SiTypescript title="TypeScript" /></div>
+              <div className="icon-wrapper js"><SiJavascript title="JavaScript" /></div>
+              <div className="icon-wrapper html"><FaHtml5 title="HTML5" /></div>
+              <div className="icon-wrapper css"><FaCss3Alt title="CSS3" /></div>
+              <div className="icon-wrapper java"><FaJava title="Java" /></div>
+              <div className="icon-wrapper spring"><SiSpringboot title="Spring Boot" /></div>
+            </div>
           </div>
         </div>
       </div>
