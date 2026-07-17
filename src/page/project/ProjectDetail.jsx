@@ -104,6 +104,13 @@ const ProjectDetail = () => {
               <h3>My Role</h3>
               <p>{project.role}</p>
 
+              {project.teamSize && (
+                <>
+                  <h3>Team Size</h3>
+                  <p>{project.teamSize} members</p>
+                </>
+              )}
+
               <h3>Challenges</h3>
               <p>{project.challenges}</p>
 
@@ -112,6 +119,14 @@ const ProjectDetail = () => {
 
               <h3>Lessons Learned</h3>
               <p>{project.lessonsLearned}</p>
+
+              {project.note && (
+                <div className="project-note" style={{ marginTop: '2rem', padding: '1rem', backgroundColor: 'rgba(255, 193, 7, 0.1)', borderLeft: '4px solid #ffc107', borderRadius: '4px' }}>
+                  <p style={{ margin: 0, fontSize: '0.95rem', color: '#ffc107', lineHeight: '1.5' }}>
+                    <strong>Note:</strong> {project.note}
+                  </p>
+                </div>
+              )}
             </div>
           </div>
         </div>
